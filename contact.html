@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - DG Digital</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="image/logo.png">
+    <script src="https://kit.fontawesome.com/2e8c644617.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="image/logo.png" width="46px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 float-end">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About Us
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="history.html">History</a></li>
+              <li><a class="dropdown-item" href="visi.html">Vision and Mission</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product.html">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="news.html">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+<!-- navigasi -->
+<!-- kontent -->
+ <div class="col-12 py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <h3>We are here to help!</h3>
+        <p>
+          Let us know how we can best serve you. Use the contact form to email us or select from the topics below the best fit your needs. It's an honor to support you in your journey towards better health.
+        </p>
+          <h6 class="text-uppercase fw-bold mb-4">You can Contact us</h6>
+          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fa-solid fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+      </div>
+      <div class="col-md-7">
+        <form id="formkontak" action="#" method="POST">
+          <label for="nama">Nama</label>
+          <input type="text" name="nama" id="inputnama" class="form-control my-2" placeholder="Masukkan nama anda" required>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="inputemail" class="form-control my-2" placeholder="Masukkan email anda" required>
+          <label for="telepon">Telephone</label>
+          <input type="tel" name="telephone" id="inputtelepon" class="form-control my-2" placeholder="Masukkan telephone anda" required>
+          <!-- penjumlahan -->
+          <label for="telepon">Tambah</label>
+          <input type="tel" name="telephone" id="inputnomer1" class="form-control my-2" placeholder="Masukkan telephone anda" required>
+          <input type="tel" name="telephone" id="inputnomer2" class="form-control my-2" placeholder="Masukkan telephone anda" required>
+          <!-- combobox/selectbox -->
+          <select id="monster-select" class="monster-select mb-5" >
+          <!-- Custom Button Part -->
+            <button class="button-selectbox">
+              <selectedcontent></selectedcontent>
+              <i class="fa-solid fa-chevron-down arrow"></i>
+              <!-- <span class="arrow"></span> -->
+            </button>
+            <option value="spike" selected>
+              <img src="https://assets.codepen.io/6291/spike.png" alt="Spike">
+              <div class="text">
+                <h3>Spike</h3>
+                <p>Monster power, little control.</p>
+              </div>
+            </option>
+            <option value="zorp">
+              <img src="https://assets.codepen.io/6291/zorp.png" alt="Zorp">
+              <div class="text">
+                <h3>Zorp</h3>
+                <p>Balanced speed and power.</p>
+              </div>
+              <p></p>
+            </option>
+            <option value="fluffy">
+              <img src="https://assets.codepen.io/6291/fluffy.png" alt="Fluffy">
+              <div class="text">
+                <h3>Fluffy</h3>
+                <p>Masterful Speed and control.</p>
+              </div>
+            </option>
+              <option value="bloop">
+              <img src="https://assets.codepen.io/6291/bloop.png" alt="Bloop">
+              <div class="text">
+                <h3>Bloop</h3>
+                <p>High power, but takes their time.</p>
+              </div>
+            </option>
+          </select>
+          <!-- <select class="form-select mb-5" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1"><img src="https://assets.codepen.io/6291/spike.png" alt="Spike"> One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select> -->
+          <!-- penjumlahan -->
+          <label for="keterangan">keterangan</label>
+          <textarea name="keterangan" id="" class="form-control my-2" placeholder="masukkan keterangan " required></textarea>
+          <button type="submit" class="btn btn-primary my-2">Send Message</button>
+          <div class="col-12 my-2">
+            This site is protected by reCAPTCHA and the google <a href="#" class="text-decoration-underline">privacy policy</a> and <a href="#" class="text-decoration-underline"> Terms of service Apply.</a> 
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+ </div>
+<!-- kontent -->
+<!-- footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <div class="me-5 d-none d-lg-block">
+      <span style="font-family: monserrat;">Get Connected with us on social networks:</span>
+    </div>
+    <div>
+      <a href="https://www.facebook.com/" class="me-4 text-reset text-decoration-none">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="https://www.x.com/" class="me-4 text-reset text-decoration-none">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a href="https://www.google.com/" class="me-4 text-reset text-decoration-none">
+        <i class="fa-brands fa-google"></i>
+      </a>
+      <a href="https://www.instagram.com/" class="me-4 text-reset text-decoration-none">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/" class="me-4 text-reset text-decoration-none">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://www.github.com/" class="me-4 text-reset text-decoration-none">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+  </section>
+  <section>
+    <div class="container text-center text-md-start mt-5">
+      <div class="row mt-3">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>DG Digital
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none"> product type 1</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none"> product type 2</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none"> product type 3</a>
+          </p>
+        </div>
+        <div class="col-md-3 col-lg-2 col-l-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="history.html" class="text-reset text-decoration-none"> History</a>
+          </p>
+          <p>
+            <a href="visi.html" class="text-reset text-decoration-none"> Vision & Mission</a>
+          </p>
+          <p>
+            <a href="gallery.html" class="text-reset text-decoration-none"> Gallery</a>
+          </p>
+          <p>
+            <a href="contact.html" class="text-reset text-decoration-none"> Contact</a>
+          </p>
+        </div>
+        <div class="col-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fa-solid fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2026 Copyright: Nama Kamu
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('#inputnama').on('input', function(){
+      this.value = this.value.replace(/[^a-zA-Z ]/g,'');
+    });
+    $('#formkontak').off('submit').on('submit',function(e){
+      e.preventDefault();
+      var namauser = $('#inputnama').val();
+      let nilai1 = $('#inputnomer1').val();
+      let nilai2 = $('#inputnomer2').val();
+      let total = 0;
+      var judul = ""
+      total = parseInt(nilai1) + parseInt(nilai2);
+      judul = nilai1 + nilai2;
+      alert(
+        "terima kasih! data berhasil dikirim.\n" +
+        "berikut data anda \n" +
+        "- Nama: " + namauser + "\n"
+        + nilai1 + "+" + nilai2 + "=" + total + "\n"
+        + judul + "\n"
+      )
+      window.location.href = "index.html";
+    })
+  });
+</script>
+<!-- <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // mengambil element input berdasarkan ID
+    var inputnama = document.getElementById('inputnama');
+    var inputtelepon = document.getElementById('inputtelepon');
+    // memasang event listerner'input'
+    inputnama.addEventListener('input',function(){
+      // Menghapus karakter selain a-z dan A-Z (ditambah spasi ' ')
+      this.value = this.value.replace(/[^a-zA-Z ]/g,'');
+    });
+    inputtelepon.addEventListener('input',function(){
+      // menghapus semua karakter yang bukan angka 0 - 9
+      this.value = this.value.replace(/[^0-9]/g,'');
+    });
+  
+  });
+</script> -->
+</body>
+</html>
